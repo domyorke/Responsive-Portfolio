@@ -153,7 +153,10 @@ footer {
 }
 
 
-{font-family: Arial, Helvetica, sans-serif;}
+ /* {
+    font-family: Arial, Helvetica, sans-serif;
+
+} */
 
 input[type=text], select, textarea {
   width: 100%;
@@ -246,21 +249,36 @@ td {
   }
 
 
-@media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 980px) {
     #containername {
         padding: 0 20px;
-        max-width: 768px;
+        /* max-width: 768px; */
+    }
+
+    body {
+        width: 100%;
     }
     
     .containerstuff {
-        padding-top: 130px;
-    }
-    #paragraph {
-        max-width: 420px;
+        /* max-width: 420px; */
+        /* padding: 17px; */
     }
 
     .skillz {
-        max-width: 420px;
+        /* max-width: 420px; */
+    }
+
+    #name {
+        text-align: center;
+    }
+
+    #containerheader {
+        width: 100%;
+    }
+
+    nav {
+        position: relative;
+        right: 34px;
     }
 
 }
@@ -286,7 +304,7 @@ td {
 }
 
 @media only screen and (max-width: 640px) {
-    #containername {
+    .containername {
         padding: 0 20px;
         max-width: 400px;
     }
@@ -302,4 +320,18 @@ td {
         max-width: 420px;
     }
 
-}
+    #containerheader {
+        width:100%
+    }
+
+    #containername {
+        width: 100%
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    nav {
+        text-align: center;
+    }
