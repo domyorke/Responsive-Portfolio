@@ -89,7 +89,7 @@ nav a:hover::before {
 }
 
 .containerstuff {
-    width: 920px;
+    max-width: 920px;
     margin: 20px auto 20px auto;
     background-color: white;
     padding:20px;
@@ -103,7 +103,6 @@ nav a:hover::before {
 
 .skillset {
     color: #4aaaa5;
-    width: 960px;
 }
 
 li {
@@ -252,20 +251,11 @@ td {
   @media only screen and (max-width: 980px) {
     #containername {
         padding: 0 20px;
-        /* max-width: 768px; */
-    }
-
-    body {
-        width: 100%;
     }
     
     .containerstuff {
-        /* max-width: 420px; */
-        /* padding: 17px; */
-    }
-
-    .skillz {
-        /* max-width: 420px; */
+         max-width: 720px; 
+         padding: 17px; 
     }
 
     #name {
@@ -277,7 +267,7 @@ td {
     }
 
     nav {
-        position: relative;
+        position: absolute;
         right: 34px;
     }
 
@@ -291,7 +281,7 @@ td {
     }
     
     .containerstuff {
-        padding-top: 130px;
+    max-width:600px;
     }
     #paragraph {
         max-width: 420px;
@@ -301,16 +291,21 @@ td {
         max-width: 420px;
     }
 
+    #name {
+        font-size: 21.5px;
+        padding: 5%;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
-    .containername {
+    #containername {
         padding: 0 20px;
         max-width: 400px;
     }
     
     .containerstuff {
-        padding-top: 130px;
+    
     }
     #paragraph {
         max-width: 420px;
@@ -321,11 +316,12 @@ td {
     }
 
     #containerheader {
-        width:100%
+        width:100%;
+        /*background-color: #4aaaa5; */
     }
 
     #containername {
-        width: 100%
+        width: 100%;
     }
 
     #name {
@@ -334,4 +330,11 @@ td {
 
     nav {
         text-align: center;
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    nav a {
+        width: 30%;
+        padding-left: 0;
     }
