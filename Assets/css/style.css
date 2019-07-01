@@ -248,7 +248,7 @@ td {
   }
 
 
-  @media only screen and (max-width: 980px) {
+  /*@media only screen and (max-width: 980px) {
     #containername {
         padding: 0 20px;
     }
@@ -274,9 +274,10 @@ td {
 }
 
 
+
+
 @media only screen and (max-width: 768px) {
     #containername {
-        padding: 0 20px;
         max-width: 640px;
     }
     
@@ -298,21 +299,33 @@ td {
 
 }
 
+*/
+
 @media only screen and (max-width: 640px) {
     #containername {
-        padding: 0 20px;
-        max-width: 400px;
     }
     
     .containerstuff {
-    
     }
+
+    #about {
+        text-align: center;
+    }
+
     #paragraph {
-        max-width: 420px;
+        font-size: large;
+        margin: 5%;
+    }
+
+    .skillset {
+        text-align: center;
+        font-size: xx-large;
+
     }
 
     .skillz {
-        max-width: 420px;
+        margin: 5%;
+        font-size: larger;
     }
 
     #containerheader {
@@ -326,15 +339,28 @@ td {
 
     #name {
         width: 100%;
+        padding: 3% 0;
     }
 
+    #profilepic {
+        margin: 5%;
+        width: 90%;
+        padding: 4px;
+        background-color: #4aaaa5;
+    }
     nav {
         text-align: center;
         width: 100%;
-        margin: 40px 0;
-    }
+        margin: 10px 0 20px 0;
+        position: static;
 
+
+    }
     nav a {
         width: 30%;
         padding-left: 0;
+    }
+
+    h1 {
+        text-align: center;
     }
