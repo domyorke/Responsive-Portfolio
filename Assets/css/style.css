@@ -126,11 +126,15 @@ h1 {
     height: 25%; width: 25%;
     float: left;
     margin-right: 2%;
+    padding: 4px;
+    background-color: #4aaaa5;
 }
 
 .catpics {
     height:50%;
     width:100%;
+    padding: 4px;
+    background-color: #4aaaa5;
 }
 
 #paragraph {
@@ -230,10 +234,10 @@ td {
   
   .overlay {
     position: absolute; 
-    bottom: 0; 
+    bottom: 5px; 
     background: #4aaaa5;
     color: #f1f1f1; 
-    width: 86.2%;
+    width: 88%;
     transition: .5s ease;
     opacity:0;
     color: white;
@@ -248,7 +252,11 @@ td {
   }
 
 
-  /*@media only screen and (max-width: 980px) {
+  /*@
+
+  */
+  
+  @media only screen and (max-width: 980px) {
     #containername {
         padding: 0 20px;
     }
@@ -258,9 +266,6 @@ td {
          padding: 17px; 
     }
 
-    #name {
-        text-align: center;
-    }
 
     #containerheader {
         width: 100%;
@@ -271,8 +276,8 @@ td {
         right: 34px;
     }
 
-}
 
+}
 
 
 
@@ -285,11 +290,9 @@ td {
     max-width:600px;
     }
     #paragraph {
-        max-width: 420px;
     }
 
     .skillz {
-        max-width: 420px;
     }
 
     #name {
@@ -297,15 +300,37 @@ td {
         padding: 5%;
     }
 
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    .catpicscontainer {
+        margin: 5%;
+    }
+
+    .catpics {
+        padding: 4px;
+        background-color: #4aaaa5;
+        margin-top: 20px;
+    }
+
+    .overlay {
+        bottom: 5px;
+        width: 93.5%;
+    }
+
 }
 
-*/
+
+
+
 
 @media only screen and (max-width: 640px) {
     #containername {
     }
     
     .containerstuff {
+    margin: 20px 20px 100px 20px;
     }
 
     #about {
@@ -335,6 +360,7 @@ td {
 
     #containername {
         width: 100%;
+        padding: 0;
     }
 
     #name {
@@ -353,9 +379,9 @@ td {
         width: 100%;
         margin: 10px 0 20px 0;
         position: static;
-
-
+        font-size: larger;
     }
+
     nav a {
         width: 30%;
         padding-left: 0;
@@ -363,4 +389,26 @@ td {
 
     h1 {
         text-align: center;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    .catpicscontainer {
+        margin: 5%;
+    }
+
+    .catpics {
+        padding: 4px;
+        background-color: #4aaaa5;
+        margin-top: 20px;
+    }
+
+    .overlay {
+        padding: 20px 0;
+        bottom: 5px;
+        width: -webkit-calc(100% + 4px);
+        width: -moz-calc(100% + 4px);
+        width: calc(100% + 4px);
     }
